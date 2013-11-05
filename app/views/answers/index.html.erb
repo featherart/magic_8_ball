@@ -1,2 +1,16 @@
-<h1>Answers#index</h1>
-<p>Find me in app/views/answers/index.html.erb</p>
+<link href='http://fonts.googleapis.com/css?family=Mystery+Quest' rel='stylesheet' type='text/css'>
+<div id="container">
+	<div id="title">Questions Answered</div>
+	<% @answers.each do |a| %>
+	<%= a.text %>
+	<% end %>
+
+</div>
+
+
+<% @questions.each do |q| %>
+	<div>
+		<%= question.text %>
+		<%= question.answers.last %>
+	</div>
+	<% end %>

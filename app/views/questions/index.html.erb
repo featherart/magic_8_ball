@@ -1,2 +1,14 @@
-<h1>Questions#index</h1>
-<p>Find me in app/views/questions/index.html.erb</p>
+<link href='http://fonts.googleapis.com/css?family=Mystery+Quest' rel='stylesheet' type='text/css'>
+<div id="title">Questions for Magic 8-ball</div>
+<div class="eight-ball">
+
+<div id="form_fields">
+<%= form_for @question do |f| %>
+	<%= f.text_area :text, size: "20x5", placeholder: "ask a question" %><br>
+	<%= f.submit %>
+<!-- <button type="submit" name="submit" id="button" class="css3button">ask, if you dare!</button> -->
+<% end %>
+</div>
+</div>
+<div id="questions">
+	</div>
