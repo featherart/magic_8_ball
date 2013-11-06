@@ -30,28 +30,41 @@
 	z-index: -1;
 	/* width and height can be anything, as long as they're equal */
 }
- .eight-ball {
+ .eight-ball 
+ {
 	border-radius: 50%;
 	width: 400px;
 	height: 400px; 
 	/* width and height can be anything, as long as they're equal */
 	background-color: black;
 	display: inline-block;
-
-/*	position: absolute;
-	left:0px;
-  	top:50px;*/
+	margin: auto;
+	padding: 20px;
 }
  body
  {
- 	background-color: grey;
+ 	background-color: #DC143C;
+ 	opacity: .9;
+ 	text-align: center;
+ 	margin: auto;
  }
  #form_fields
  {
+ 	/* this is bad: need a way to make this float inside the other div */
  	position: absolute;
- 	left:140px;
+ 	left:240px;
   	top:200px;
   	vertical-align: center;
+ }
+ #questions
+ {
+ 	font-family: Mystery Quest;
+ 	font-size: 14px;
+ 	font-style: italic;
+ 	color: white;
+ 	margin-top: 30px;
+ 	padding: 10px;
+ 	padding-top: 40px;
  }
  button.css3button {
 	float: left;
