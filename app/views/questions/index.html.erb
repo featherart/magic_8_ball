@@ -9,7 +9,17 @@
 <button type="submit" name="submit" id="button" class="css3button">ask, if you dare!</button>
 <% end %>
 <div id="questions">
+
 </div>
 </div>
 </div>
+<div id="past_questions">
+<% @questions.reverse.each do |question| %>
+    <div id="past_questions">
+      <%= question.text %>
+      <br>
+      <%= question.answers.last.text %>
+    </div>
+  <% end %>
+ </div>
 
