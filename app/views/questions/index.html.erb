@@ -1,16 +1,19 @@
 <link href='http://fonts.googleapis.com/css?family=Mystery+Quest' rel='stylesheet' type='text/css'>
 <div id="title">Questions for Magic 8-ball</div>
-<div class="eight-ball">
 
-<div id="form_fields">
-<%= form_for @question do |f| %>
-	<%= f.text_area :text, size: "20x5", placeholder: "ask a question" %><br>
-	<%#= f.submit %>
-<button type="submit" name="submit" id="button" class="css3button">ask, if you dare!</button>
-<% end %>
-<div id="questions">
+<div id="eight-ball" class="Aligner">
+	<div id="form_fields" class="Aligner-item Aligner-item--top">
+	<%= form_for @question do |f| %>
+		<%= f.text_area :text, size: "20x5", placeholder: "ask a question" %><br>
+		<%#= f.submit %>
+	<button type="submit" name="submit" id="css3button">ask, if you dare!</button>
+	<% end %>
+	<div id="questions" class="Aligner-item Aligner-item--bottom">
 
+	</div>
+	</div>
 </div>
+
 </div>
 </div>
 <div id="past_questions">

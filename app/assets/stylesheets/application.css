@@ -21,42 +21,52 @@
  	padding: 20px;
  	padding-left: 40px;
  }
- .circle {
-	border-radius: 50%;
-	width: 400px;
-	height: 400px; 
-	background-color: yellow;
-/*	opacity: .5;*/
-	z-index: -1;
-	/* width and height can be anything, as long as they're equal */
-}
- .eight-ball 
+ #eight-ball 
  {
 	border-radius: 50%;
 	width: 400px;
 	height: 400px; 
 	/* width and height can be anything, as long as they're equal */
 	background-color: black;
-	display: inline-block;
+/*	display: inline-block;
 	margin: auto;
-	padding: 20px;
+	padding: 20px;*/
 }
  body
  {
  	background-color: #DC143C;
  	opacity: .9;
- 	text-align: center;
- 	margin: auto;
+/* 	text-align: center;
+ 	margin: auto;*/
  }
- #form_fields
+ .Aligner 
  {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.Aligner-item 
+{
+  max-width: 50%;
+}
+.Aligner-item--top 
+{
+  align-self: flex-start;
+}
+.Aligner-item--bottom 
+{
+  align-self: flex-end;
+}
+#form_fields
+{
  	/* this is bad: need a way to make this float inside the other div */
- 	position: absolute;
+ 	/*position: absolute;
  	left:240px;
   	top:200px;
   	vertical-align: left;
-  	float: left;
+  	float: left;*/
   	max-width: 150px;
+  	padding-top: 100px;
  }
  #questions
  {
@@ -78,7 +88,7 @@
  	padding: 10px;
  	padding-top: 10px;
  }
- button.css3button {
+ button#css3button {
 	float: left;
 	font-family: Mystery Quest;
 	font-size: 14px;

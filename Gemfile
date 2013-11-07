@@ -2,6 +2,7 @@ source 'https://rubygems.org'
 
 gem 'rails', '3.2.14'
 gem 'sqlite3'
+gem 'compass-flexbox', '~> 1.1.2'
 
 group :development do
   gem 'pry-rails'
