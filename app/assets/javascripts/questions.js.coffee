@@ -9,9 +9,8 @@
     $("#questions").html("")
     # post form data then append to 8-ball
     post.done (data)->
-      answer_string = "<div>" + data["question"]["text"] + "<br>" + data["answer"]["text"] + "</div>"
-      $("#questions").prepend(answer_string)
-      $("#past_questions").prepend(answer_string)
+      $("#questions").prepend(data["question"]["text"] + "<br> " + data["answer"]["text"])
+      $("#past_questions").prepend("<li>" + data["question"]["text"] + "<br> ☆ " + data["answer"]["text"] + " ☆ </li>")
     # clear the text box
     $text.val("")
     

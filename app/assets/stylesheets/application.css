@@ -23,6 +23,7 @@
  }
  #eight-ball 
  {
+ 	float: left;
 	border-radius: 50%;
 	width: 400px;
 	height: 400px; 
@@ -78,15 +79,24 @@
  	padding: 10px;
  	padding-top: 40px;
  }
+ li
+ {
+ 	  list-style: none;
+ }
  #past_questions
  {
- 	font-family: Mystery Quest;
- 	font-size: 14px;
- 	font-style: italic;
+ 	font-family: Flamenco;
+ 	font-size: 12px;
  	color: black;
- 	margin-top: 10px;
+ 	margin: auto;
  	padding: 10px;
- 	padding-top: 10px;
+ 	padding-top: 20px;
+ 	float: right;
+ 	background-color: white;
+ 	opacity: .8;
+ 	max-width: 200px;
+ 	border-radius: 10px;
+ 	text-align: left;
  }
  button#css3button {
 	float: left;

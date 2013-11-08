@@ -1,4 +1,5 @@
 <link href='http://fonts.googleapis.com/css?family=Mystery+Quest' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Flamenco' rel='stylesheet' type='text/css'>
 <div id="title">Questions for Magic 8-ball</div>
 
 <div id="eight-ball" class="Aligner">
@@ -18,11 +19,10 @@
 </div>
 <div id="past_questions">
 <% @questions.reverse.each do |question| %>
-    <div id="past_questions">
-      <%= question.text %>
-      <br>
-      <%= question.answers.last.text %>
-    </div>
+      <p>
+      <%= question.text %> <br> ☆
+      <%= question.answers.last.text %> ☆
+  	  </p>
   <% end %>
  </div>
 
