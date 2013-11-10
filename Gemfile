@@ -1,7 +1,6 @@
 source 'https://rubygems.org'
 
 gem 'rails', '3.2.14'
-gem 'sqlite3'
 gem 'compass-flexbox', '~> 1.1.2'
 gem 'will_paginate', '~> 3.0'
 
@@ -12,6 +11,7 @@ end
 group :development do
   gem 'pry-rails'
   gem 'pry'
+  gem 'sqlite3'
 end
 
 group :assets do
