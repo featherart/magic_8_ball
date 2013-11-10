@@ -11,8 +11,8 @@
  *= require_self
  *= require_tree .
  */
- #title
- {
+#title
+{
  	font-family: Mystery Quest;
  	font-size: 1.6em;
  	font-weight: bold;
@@ -20,9 +20,10 @@
  	padding-bottom: 30px;
  	padding: 20px;
  	padding-left: 40px;
- }
- #eight-ball 
- {
+ 	opacity: .8;
+}
+#eight-ball 
+{
  	float: left;
 	border-radius: 50%;
 	width: 400px;
@@ -30,8 +31,8 @@
 	/* width and height can be anything, as long as they're equal */
 	background-color: black;
 }
- body
- {
+body
+{
  	opacity: .9;
  	background: #1b0e3f; /* Old browsers */
 	background: -moz-linear-gradient(top,  #1b0e3f 30%, #4223a1 45%, #3d1c96 57%, #6f2177 81%); /* FF3.6+ */
@@ -41,9 +42,9 @@
 	background: -ms-linear-gradient(top,  #1b0e3f 30%,#4223a1 45%,#3d1c96 57%,#6f2177 81%); /* IE10+ */
 	background: linear-gradient(to bottom,  #1b0e3f 30%,#4223a1 45%,#3d1c96 57%,#6f2177 81%); /* W3C */
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1b0e3f', endColorstr='#6f2177',GradientType=0 ); /* IE6-9 */
- }
- .Aligner 
- {
+}
+.Aligner 
+{
   display: flex;
   align-items: center;
   justify-content: center;
@@ -62,18 +63,11 @@
 }
 #form_fields
 {
- 	/* this is bad: need a way to make this float inside the other div */
- 	/*position: absolute;
- 	left:240px;
-  	top:200px;
-  	vertical-align: left;
-  	float: left;*/
-  	max-width: 150px;
+  	max-width: 180px;
   	padding-top: 100px;
 }
 #questions
 {
- 	/*font-family: Mystery Quest;*/
  	font-family: Alice;
  	font-size: 14px;
  	font-style: italic;
@@ -81,26 +75,13 @@
  	margin-top: 30px;
  	padding: 10px;
  	padding-top: 40px;
- 	animation:myfirst 10s;
-	-webkit-animation:myfirst 10s; /* Safari and Chrome */
 }
-@keyframes myfirst
+li
 {
-from {opacity: .1;}
-to {opacity: .9;}
+ 	list-style: none;
 }
-
-@-webkit-keyframes myfirst /* Safari and Chrome */
+#past_questions
 {
-from {opacity: .1;}
-to {opacity: .9;}
-}
- li
- {
- 	  list-style: none;
- }
- #past_questions
- {
  	font-family: Alice;
  	font-size: 12px;
  	color: black;
@@ -109,12 +90,14 @@ to {opacity: .9;}
  	padding-top: 20px;
  	float: right;
  	background-color: white;
- 	opacity: .8;
+ 	opacity: .7;
  	max-width: 200px;
+ 	width: 200px;
  	border-radius: 10px;
  	text-align: left;
  }
- button#css3button {
+ button#css3button 
+ {
 	float: left;
 	font-family: Mystery Quest;
 	font-size: 14px;

@@ -8,15 +8,10 @@
     # clear the questions div to make room for next question & answer pair
     $("#questions").html("")
     # post form data then append to 8-ball
-    post.done (data)->
-      # $("#questions").animate
-      #   opacity: 0.25, 5000, ->  
-      $("#questions").prepend(data["question"]["text"] + "<p> " + data["answer"]["text"] + "</p>")
-      # .animate
-      #   opacity: 0.25, 5000, -> 
-
-      $("#past_questions").prepend("<li>" + data["question"]["text"] + "<br> ☆ " + data["answer"]["text"] + " ☆ </li>")
-      #$("#past_questions").fade
+    post.done (data)-> 
+      $("#questions").append(data["question"]["text"]).animate
+        opacity: 0.3, 1000, -> $("#questions").append("<p> " + data["answer"]["text"] + "</p>")
+      $("#past_questions").append("<li>" + data["question"]["text"] + "<br> ☆ " + data["answer"]["text"] + " ☆ </li>")
     # clear the text box
     $text.val("")
     
