@@ -1,11 +1,13 @@
 source 'https://rubygems.org'
 
 gem 'rails', '3.2.14'
+gem 'jquery-rails'
 gem 'compass-flexbox', '~> 1.1.2'
 gem 'will_paginate', '~> 3.0'
 
 group :production do
   gem 'pg'
+  gem 'unicorn'
 end
 
 group :development do
@@ -20,6 +22,6 @@ group :assets do
   gem 'uglifier', '>= 1.0.3'
 end
 
-gem 'jquery-rails'
+
 
 
