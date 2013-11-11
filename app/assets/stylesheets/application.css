@@ -43,6 +43,7 @@ body
 	background: linear-gradient(to bottom,  #1b0e3f 30%,#4223a1 45%,#3d1c96 57%,#6f2177 81%); /* W3C */
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1b0e3f', endColorstr='#6f2177',GradientType=0 ); /* IE6-9 */
 	background-repeat: no-repeat;
+	background-size: 100%;
 }
 .Aligner 
 {
