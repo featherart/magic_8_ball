@@ -18,12 +18,14 @@
 </div>
 </div>
 <div id="past_questions">
-<% @questions.each do |question| %>
+<% if @questions %>
+  <% @questions.each do |question| %>
       <p>
       <%= question.text %> <br> ☆
       <%= question.answers.last.text %> ☆
   	  </p>
   <% end %>
+<% end %>
   <%= will_paginate @questions %>
  </div>
 
