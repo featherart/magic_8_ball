@@ -10,8 +10,8 @@
     # post form data then append to 8-ball
     post.done (data)-> 
       $("#questions").append(data["question"]["text"]).animate
-        opacity: 0.8, 1000, -> $("#questions").append("<p> " + data["answer"]["text"] + "</p>")
-      $("#past_questions").append("<li>" + data["question"]["text"] + "<br> ☆ " + data["answer"]["text"] + " ☆ </li>")
+        opacity: 0.9, 1000, -> $("#questions").append("<p> " + data["answer"]["text"] + "</p>")
+      $("#past_questions").prepend("<p>" + data["question"]["text"] + "<br> ☆ " + data["answer"]["text"] + " ☆ </p>")
     # clear the text box
     $text.val("")
     
